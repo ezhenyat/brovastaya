@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="apple-touch-icon-precomposed" href="img/fav180.png">
+    <link rel="icon" href="img/fav196.png">
+    <link rel="preload" href="fonts/comfortaa400.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="fonts/comfortaa400.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/comfortaa700.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="fonts/comfortaa700.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/montserrat400.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="fonts/montserrat400.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/montserrat700.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="fonts/montserrat700.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/montserrat900.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="fonts/montserrat900.woff2" as="font" type="font/woff2" crossorigin="">
+
+    <title>Brovastaya</title>
+    
+        <script type="text/javascript">
+            (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+                m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+            })
+                (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+            ym(53684743, "init", {
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true
+            }); 
+        </script>
+        <noscript>
+            <div><img src="https://mc.yandex.ru/watch/53684743" style="position:absolute; left:-9999px;" alt=""></div>
+        </noscript>
+        
+</head>
+
+<body>
+
+    <div style="display:none">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="assignment-mask" viewbox="0 0 320 71" preserveaspectratio="none"><path d="M106.5 55.555C63.7 82.379 17.667 68.265 0 57.856V0h320v55.555c-72-44.05-160-33.53-213.5 0z" overflow="visible" fill="#282828"></path></symbol><symbol id="course-content-mask" viewbox="0 0 320 57" preserveaspectratio="none"><path overflow="visible" d="M106.5 12.4C63.7-9.136 17.667 2.194 0 10.551V57h320V12.4c-72 35.363-160 26.918-213.5 0z" fill="#282828"></path></symbol><symbol id="feedback-mask" viewbox="0 0 320 42" preserveaspectratio="none"><path overflow="visible" d="M213.5 32.864c42.8 15.867 88.833 7.519 106.5 1.36V0H0v32.864c72-26.058 160-19.835 213.5 0z" fill="#282828"></path></symbol><symbol id="feedback2-mask" viewbox="0 0 320 100" preserveaspectratio="none"><path overflow="visible" d="M320 58.749c-130.8-106.4-267.833-44.333-320 0v41h320v-41z" fill="#282828"></path></symbol><symbol id="intro-mask-tablet" viewbox="0 0 600 99" preserveaspectratio="none">
+<path overflow="visible" d="M600 0C344.907 164.507 86.3781 68.5446 -11 0V98.5165H600V0Z" fill="#282828"></path>
+</symbol><symbol id="intro-mask" viewbox="0 0 320 104" preserveaspectratio="none">
+<path overflow="visible" d="M320 0C186.4 105.2 51 43.8333 0 0V103.5H320V0Z" fill="#282828"></path>
+</symbol></svg>
+    </div>
+
+    <header class="page-header">
+        <nav class="page-nav">
+            <div class="page-nav__top-wrapper">
+                <div class="page-nav__toggle">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </div>
+                <p class="page-nav__contact"><a href="tel:+79826515217">+7 982 651 52 17</a></p>
+            </div>
+            <div class="page-nav__wrapper">
+                <div class="page-nav__menu">
+                    <a class="page-nav__home" onclick="scrollToTop();">Brovastaya</a>
+                    <ul class="page-nav__list reset-list">
+                        <li><a class="page-nav__item">Для кого?</a></li>
+                        <li><a class="page-nav__item">Программа</a></li>
+                        <li><a class="page-nav__item">Преподаватель</a></li>
+                        <li><a class="page-nav__item">Стоимость</a></li>
+                    </ul>
+                    <ul class="page-nav__socials-list socials-list reset-list">
+                        <li class="socials-list__item">
+                            <a class="socials-list__btn socials-list__btn--whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=79826515217&submit=Continue">
+                                <span class="visually-hidden">WhatsApp</span>
+                            </a>
+                        </li>
+                        <li class="socials-list__item">
+                            <a class="socials-list__btn socials-list__btn--vk" target="_blank" href="https://vk.com/brovastayaa">
+                                <span class="visually-hidden">VK</span>
+                            </a>
+                        </li>
+                        <li class="socials-list__item">
+                            <a class="socials-list__btn socials-list__btn--insta" target="_blank" href="https://www.instagram.com/brovastaya/">
+                                <span class="visually-hidden">Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyrights page-nav__copyrights">© 2019 Brovastaya</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="page-main">
+        <section class="intro">
+            <div class="container">
+                <h1 class="page-main__title intro__title">Привлекательная портретная фотография</h1>
+                <p class="intro__subtitle">Для мастера перманентного макияжа</p>
+                <div class="intro__camera-block">
+                    <picture>
+                        <source type="image/webp" srcset="img/fotik.webp">
+                        <img class="intro__paloriod-photo" src="img/fotik.png" width="394" height="337" alt="Polaroid фото">
+                    </picture>
+                    <div class="intro__gallery">
+                        <div class="intro__gallery-item">
+                            <picture>
+                                <source type="image/webp" srcset="img/Kartochka2.webp">
+                                <img src="img/Kartochka_2.png" width="341" height="427" alt="Фото 1">
+                            </picture>
+                        </div>
+                        <div class="intro__gallery-item">
+                            <picture>
+                                <source type="image/webp" srcset="img/Kartochka1.webp">
+                                <img src="img/Kartochka_1.png" width="341" height="427" alt="Фото 2">
+                            </picture>
+                        </div>
+                        <div class="intro__gallery-item flowAnimation" onclick="showModal(this)">
+                            <picture>
+                                <source type="image/webp" srcset="img/Kartochka3.webp">
+                                <img src="img/Kartochka_3.png" width="341" height="427" alt="Фото 3">
+                            </picture>
+                        </div>
+                    </div>
+                    <a class="intro__insta-btn socials-list__btn socials-list__btn--insta" target="_blank" href="https://www.instagram.com/brovastaya/">
+                        <span class="visually-hidden">Instagram</span>
+                    </a>
+                </div>
+            </div>
+            <div class="intro__wrapper">
+                <picture class="intro__photos">
+                    <source type="image/webp" media="(min-width: 560px)" srcset="img/intro-photos-tablet.webp">
+                    <source type="image/webp" srcset="img/intro-photos-mobile.webp">
+                    <source media="(min-width: 560px)" srcset="img/intro-photos-tablet.png">
+                    <img class="intro__photos" src="img/intro-photos-mobile.png" width="300" height="150" alt="Фото моделей">
+                </picture>
+                <svg class="intro__mask" width="100%" height="83">
+                    <use xlink:href="#intro-mask"></use>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="intro__desktop-wrapper">
+                    <a target="_blank" href="https://www.digiseller.market/asp2/pay_wm.asp?id_d=2653521&lang=ru-RU"><button class="intro__desktop-btn" data-type="hover">Купить курс</button></a>
+                    <p class="intro__desktop-consult">Или <a onclick="window.scrollTo(0, 8000)"><span>получить
+                                консультацию</span></a></p>
+                </div>
+            </div>
+            <a class="intro__down-arrow" onclick="window.scrollTo(0, 900)">
+                <span class="visually-hidden">Вниз</span>
+            </a>
+            <svg class="intro__wave" preserveAspectRatio="none" viewBox="0 0 1920 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="introWave" d="M0 205.486C71.8333 229.182 250 242.452 388 105.962C560.5 -64.6501 842 32.4223 938 179.012C1034 325.601 1453 685.456 1920 218.723V0H0V205.486Z" fill="#282828"></path>
+            </svg>
+        </section>
+        <section class="intro-lower">
+            <div class="container">
+                <p class="intro-lower__title">Образовательный видеокурс</p>
+                <div class="intro-lower__btn-wrapper">
+                    <a target="_blank" href="https://www.digiseller.market/asp2/pay_wm.asp?id_d=2653521&lang=ru-RU"><button class="intro-lower__buy-btn" type="button">Купить</button></a>
+                    <a class="intro-lower__gallery-btn" target="_blank" href="https://www.instagram.com/brovastaya/">
+                        <span class="visually-hidden">Галерея</span>
+                    </a>
+                </div>
+                <iframe class="mockup-tablet" src="https://player.vimeo.com/video/331540106?color=ff9933&title=0&byline=0&portrait=0&loop=1" width="280" height="170" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+            </div>
+        </section>
+        <section class="desktop-intro" id="video">
+            <div class="container">
+                <iframe class="desktop-intro__mockup" src="https://player.vimeo.com/video/331540106?color=ff9933&title=0&byline=0&portrait=0&loop=1" width="987" height="555" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                <ul class="desktop-intro__list reset-list">
+                    <li class="desktop-intro__item">
+                        <h2>Доступ</h2>
+                        <p>Из любой точки мира</p>
+                    </li>
+                    <li class="desktop-intro__item">
+                        <h2>Сопровождение</h2>
+                        <p>В любом удобном чате</p>
+                    </li>
+                    <li class="desktop-intro__item">
+                        <h2>Длительность</h2>
+                        <p>Один час</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="features">
+            <div class="container">
+                <h1 class="page-main__title features__title">Освойте продающую фотографию</h1>
+                <p class="features__subtitle">Научитесь делать привлекательные фотографии для своего портфолио, за счёт
+                    которого увеличится доверие к вам, как к профессионалу своего дела</p>
+                <ul class="features__list reset-list">
+                    <li class="features__item">
+                        <h2 class="features__accent"><span>на </span>15%</h2>
+                        <p class="features__description">Увеличится поток клиентов</p>
+                    </li>
+                    <li class="features__item">
+                        <h2 class="features__accent">80%</h2>
+                        <p class="features__description">Клиентов обращают внимание именно<br class="features__break">
+                            на портретные фото</p>
+                    </li>
+                    <li class="features__item">
+                        <h2 class="features__accent">100%</h2>
+                        <p class="features__description">Улучшение качества ваших фотографий</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="assignment" class="assignment">
+            <svg class="assignment__wave" preserveAspectRatio="none" viewBox="0 0 1920 383" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="assignmentWave" d="M1920 90.9233C1828 30.7426 1586.9 -52.387 1358.5 96.5401C1087.08 273.519 840.247 159.583 788 135.457C754 120.612 572 52.4076 441 193.632C310 334.855 144 380.994 0 383V0H1920V90.9233Z" fill="#282828"></path>
+            </svg>
+            <svg class="assignment__mask" width="100%" height="71">
+                <use xlink:href="#assignment-mask"></use>
+            </svg>
+            <div class="container">
+                <h1 class="page-main__title assignment__main-title">Курс идеально подойдет</h1>
+                <p class="assignment__subtitle">Мастеру татуажа, который хочет успешно монетизировать свой профиль в
+                    социальных сетях
+                </p>
+                <input id="assignment-tab1" class="visually-hidden" type="radio" name="assignment" checked="">
+                <input id="assignment-tab2" class="visually-hidden" type="radio" name="assignment">
+                <input id="assignment-tab3" class="visually-hidden" type="radio" name="assignment">
+                <div class="assignment__control">
+                    <label for="assignment-tab1">
+                        <span class="assignment__tab">Начинающему мастеру</span>
+                    </label>
+                    <label for="assignment-tab2">
+                        <span class="assignment__tab">Продвинутому мастеру</span>
+                    </label>
+                    <label for="assignment-tab3">
+                        <span class="assignment__tab">Владельцу салона</span>
+                    </label>
+                </div>
+                <ul class="assignment__list slider reset-list">
+                    <li class="assignment__item slider__item slider__item--firstA">
+                        <picture>
+                            <source type="image/webp" srcset="img/pro.webp">
+                            <img class="assignment__item-photo" width="241" height="473" src="img/pro.png" alt="Телефон">
+                        </picture>
+                        <h2 class="assignment__title">Владельцу салона</h2>
+                        <p class="assignment__description">Мастера вашего салона научатся делать цепляющие
+                            фотографии
+                            своих
+                            работ для сайта и социальных сетей. Поток ваших клиентов увеличится!
+                        </p>
+                    </li>
+                    <li class="assignment__item slider__item slider__item--secondA">
+                        <picture>
+                            <source type="image/webp" srcset="img/inter.webp">
+                            <img class="assignment__item-photo" width="241" height="473" src="img/inter.png" alt="Телефон">
+                        </picture>
+                        <h2 class="assignment__title">Продвинутому мастеру</h2>
+                        <p class="assignment__description">Вы научитесь создавать привлекательные фотографии,
+                            которые
+                            сможете использовать для рекламы, а также для привлечения новых учеников
+                        </p>
+                    </li>
+                    <li class="assignment__item slider__item slider__item--thirdA">
+                        <picture>
+                            <source type="image/webp" srcset="img/beginner.webp">
+                            <img class="assignment__item-photo" width="241" height="473" src="img/beginner.png" alt="Телефон">
+                        </picture>
+                        <label for="assignment-tab1">
+                            <h2 class="assignment__title">Начинающему мастеру</h2>
+                        </label>
+                        <p class="assignment__description">Благодаря качественной фотографии вы сможете успешно
+                            запуститься<br>
+                            в сфере перманентного макияжа, привлекая больше клиентов
+                        </p>
+                    </li>
+                </ul>
+                <div class="slider__control slider__control--assignment">
+                    <button class="slider__btn slider__btn--prev" type="button"></button>
+                    <button class="slider__btn slider__btn--next" type="button"></button>
+                </div>
+                <a target="_blank" href="https://www.digiseller.market/asp2/pay_wm.asp?id_d=2653521&lang=ru-RU"><button class="assignment__buy-btn" data-type="hover">Купить курс</button></a>
+            </div>
+        </section>
+        <section id="course-content" class="course-content spoiler">
+            <div class="container">
+                <h1 class="page-main__title course-content__title">Программа курса</h1>
+                <span class="course-content__description">
+                    Курс состоит из 5 модулей, включающих теорию и домашние задания
+                </span>
+                <div class="spoiler__tab spoiler__tab--first">
+                    <label class="spoiler__label spoiler__label--empty">1. Знакомство с преподавателем </label>
+                </div>
+                <div class="spoiler__tab spoiler__tab--second">
+                    <label class="spoiler__label spoiler__label--empty">2. Типичные ошибки мастера татуажа.
+                        Интервью с клиентом
+                    </label>
+                </div>
+                <div class="spoiler__tab spoiler__tab--third">
+                    <input class="spoiler__input visually-hidden" id="tab-one" type="radio" name="tabs" onclick="clickRadio(this)">
+                    <label class="spoiler__label" for="tab-one">3. Что понадобится. Необходимый минимум</label>
+                    <ol class="spoiler__tab-content">
+                        <li>Что необходимо для съёмки</li>
+                        <li>Организация помещений</li>
+                        <li>Как выбрать технику для фото</li>
+                        <li>Как сделать фон</li>
+                        <li>Как выбрать свет</li>
+                    </ol>
+                </div>
+                <div class="spoiler__tab spoiler__tab--fourth">
+                    <input class="spoiler__input visually-hidden" id="tab-two" type="radio" name="tabs" onclick="clickRadio(this)">
+                    <label class="spoiler__label" for="tab-two">4. Подготовка к съемке (Теория)</label>
+                    <ol class="spoiler__tab-content">
+                        <li>Ошибки в ракурсах</li>
+                        <li>Как сделать удачное фото (Секреты)</li>
+                        <li>Как убедить клиента сделать фотографию</li>
+                        <li>Важные мелочи</li>
+                        <li>Удачные ракурсы</li>
+                        <li>Правильная постановка и композиция кадра</li>
+                    </ol>
+                </div>
+                <div class="spoiler__tab spoiler__tab--fifth">
+                    <input class="spoiler__input visually-hidden" id="tab-three" type="radio" name="tabs" onclick="clickRadio(this)">
+                    <label class="spoiler__label" for="tab-three">5. Съемка клиента (Практика) </label>
+                    <ol class="spoiler__tab-content">
+                        <li>Съемка при искусственном свете</li>
+                        <li>Съемка при естественном свете</li>
+                        <li>Съемка при прямом солнечном свете</li>
+                        <li>Фишечки в фотографии</li>
+                        <li>Настройка техники</li>
+                        <li>Обработка фотографий</li>
+                        <li>Как сделать коллаж из фотографий</li>
+                        <li>Как вставить логотип на фото</li>
+                    </ol>
+                </div>
+            </div>
+            <svg id="teacher" class="course-content__mask" width="100%" height="71">
+                <use xlink:href="#course-content-mask"></use>
+            </svg>
+        </section>
+        <section class="about">
+            <svg class="about__wave" preserveAspectRatio="none" viewBox="0 0 1920 447" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="aboutWave" d="M484.874 274.902C310.519 480.493 88.9768 459.894 0 423.896V0H1920V185.406C1765.54 308.401 1537.6 382.397 1285.67 185.406C1033.73 -11.5847 702.817 17.9139 484.874 274.902Z" fill="#F1A613"></path>
+            </svg>
+            <div class="container">
+                <h1 class="page-main__title about__title">Преподаватель</h1>
+                <span class="about__subtitle">Профессиональный фотограф и мастер перманентного макияжа</span>
+                <div class="about__wrapper">
+                    <h2 class="about__teacher">Юлия<br> Brovastaya</h2>
+                    <picture class="about__photo">
+                        <source type="image/webp" media="(min-width: 960px)" srcset="img/brovastaya-desktop.webp">
+                        <source type="image/webp" media="(min-width: 560px)" srcset="img/brovastaya-tablet.webp">
+                        <source type="image/webp" srcset="img/brovastaya-mobile.webp">
+                        <source media="(min-width: 960px)" srcset="img/brovastaya-desktop.png">
+                        <source media="(min-width: 560px)" srcset="img/brovastaya-tablet.png">
+                        <img class="about__photo" src="img/brovastaya-mobile.png" width="109" height="115" alt="Преподаватель">
+                    </picture>
+                    <ul class="about__skills reset-list">
+                        <li class="about__skills-name">
+                            <div class="about__skills-item about__skills-item--mobile">
+                                <span>27лет</span><span class="about__white-space"></span>в живописи
+                            </div>
+                            <div class="about__skills-item about__skills-item--desktop">
+                                <h3>Фотография</h3>
+                                <span><span class="about__skills-age">10</span>лет</span>
+                                <p>Профессиональной практики</p>
+                            </div>
+                        </li>
+                        <li class="about__skills-name">
+                            <div class="about__skills-item about__skills-item--mobile">
+                                <span>10лет</span><span class="about__white-space"></span>в фотографии
+                            </div>
+                            <div class="about__skills-item about__skills-item--desktop">
+                                <h3>Татуаж</h3>
+                                <span><span class="about__skills-age">5</span>лет</span>
+                                <p>В сфере красоты</p>
+                            </div>
+                        </li>
+                        <li class="about__skills-name">
+                            <div class="about__skills-item about__skills-item--mobile">
+                                <span>5лет</span><span class="about__white-space"></span>в татуаже
+                            </div>
+                            <div class="about__skills-item about__skills-item--desktop">
+                                <h3>Живопись</h3>
+                                <span><span class="about__skills-age">27</span>лет</span>
+                                <p>В сфере искусства</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="teaching">
+            <div class="container">
+                <h1 class="page-main__title teaching__title">Как проходит обучение</h1>
+                <ul class="teaching__list reset-list">
+                    <li class="teaching__item">Просматриваете видеоуроки</li>
+                    <li class="teaching__item">Консультируетесь с преподавателем</li>
+                    <li class="teaching__item">Проходите офлайн практику</li>
+                    <li class="teaching__item">Создаёте продающие снимки</li>
+                </ul>
+            </div>
+        </section>
+        <section class="feedback">
+            <svg class="feedback__wave" preserveAspectRatio="none" viewBox="0 0 1920 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="feedbackWave" d="M473.5 139.867C303.5 26.2991 85 52.3192 -3 79.5252V0H1917V191.14C1755.8 199.232 1635.13 147.95 1590.5 124.869C1265.7 -43.1112 966.167 62.0855 857 135.681C792.5 179.165 643.5 253.435 473.5 139.867Z" fill="#282828"></path>
+            </svg>
+            <svg class="feedback__mask" width="100%" height="71">
+                <use xlink:href="#feedback-mask"></use>
+            </svg>
+            <div class="container">
+                <h1 class="page-main__title feedback__title">Результаты обучения</h1>
+                <input class="visually-hidden" type="radio" id="feedback-slide1" name="feedback" checked="true">
+                <input class="visually-hidden" type="radio" id="feedback-slide2" name="feedback">
+                <input class="visually-hidden" type="radio" id="feedback-slide3" name="feedback">
+                <ul class="feedback__list slider reset-list">
+                    <li class="feedback__item slider__item slider__item--firstF">
+                        <picture>
+                            <source type="image/webp" srcset="img/Oksana_Glukhikh_mob.webp">
+                            <img class="feedback__author-photo" src="img/Oksana_Glukhikh_mob.png" width="61" height="61" alt="Фото автора">
+                        </picture>
+                        <div class="feedback__wrapper">
+                            <h2 class="feedback__author feedback__author--first">Оксана Глухих</h2>
+                            <span class="feedback__author-label feedback__author-label--first">Мастер по татуажу</span>
+                            <ul class="feedback__socials-list reset-list">
+                                <li class="feedback__socials-item feedback__socials-item--first">
+                                    <a class="feedback__socials-button feedback__socials-button--vk" target="_blank" href="https://vk.com/id268183858">
+                                        <span class="visually-hidden">VK</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="feedback__text">
+                                Твой курс мне дал очень много полезной информации, которая была мне так необходима! Я
+                                вдохновлена! Буду рекомендовать тебя всем! Спасибо за такие
+                                доступные уроки!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="feedback__item slider__item slider__item--secondF">
+                        <picture>
+                            <source type="image/webp" srcset="img/alex_mob.webp">
+                            <img class="feedback__author-photo" src="img/alex_mob.png" width="61" height="61" alt="Фото автора">
+                        </picture>
+                        <div class="feedback__wrapper">
+                            <h2 class="feedback__author feedback__author--second">Алексей Карпуков</h2>
+                            <span class="feedback__author-label feedback__author-label--second">Специалист<br> лазерного удаления</span>
+                            <ul class="feedback__socials-list reset-list">
+                                <li class="feedback__socials-item">
+                                    <a class="feedback__socials-button feedback__socials-button--vk" target="_blank" href="https://vk.com/id529304618">
+                                        <span class="visually-hidden">VK</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="feedback__text">
+                                Хочу поблагодарить Юлю, за несколько часов узнал огромное количество полезной информации.
+                                Настоятельно рекомендую всем, не пожалеете ни единого потраченного рубля!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="feedback__item slider__item slider__item--thirdF">
+                        <picture>
+                            <source type="image/webp" srcset="img/yul_mob.webp">
+                            <img class="feedback__author-photo" src="img/yul_mob.png" width="61" height="61" alt="Фото автора">
+                        </picture>
+                        <div class="feedback__wrapper">
+                            <h2 class="feedback__author feedback__author--third">Юлия</h2>
+                            <span class="feedback__author-label feedback__author-label--third">Косметолог</span>
+                            <ul class="feedback__socials-list reset-list">
+                                <li class="feedback__socials-item">
+                                    <a class="feedback__socials-button feedback__socials-button--insta" target="_blank" href="https://www.instagram.com/kosmetolog.yu/">
+                                        <span class="visually-hidden">Instagram</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="feedback__text">
+                                Спасибо за курс фотографии!
+                                Узнала много новых вещей, полезные фишечки для классных фото.
+                                Научилась подбирать правильный ракурс и выставлять свет)
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="slider__control">
+                    <button class="slider__btn slider__btn--prev" type="button"></button>
+                    <button class="slider__btn slider__btn--next" type="button"></button>
+                </div>
+                <div class="feedback__control">
+                    <label class="feedback__control-item" for="feedback-slide1">
+                        <span class="visually-hidden">Первый слайд</span>
+                    </label>
+                    <label class="feedback__control-item" for="feedback-slide2">
+                        <span class="visually-hidden">Второй слайд</span>
+                    </label>
+                    <label class="feedback__control-item" for="feedback-slide3">
+                        <span class="visually-hidden">Третий слайд</span>
+                    </label>
+                </div>
+            </div>
+            <svg class="feedback2__mask" width="100%" height="71">
+                <use xlink:href="#feedback2-mask"></use>
+            </svg>
+            <div id="cost" class="feedback__anchor"></div>
+        </section>
+        <section class="offer">
+            <div class="container">
+                <h1 class="page-main__title offer__title">Начни обучение здесь и сейчас</h1>
+                <div class="offer__wrap">
+                    <div class="offer__cite">
+                        <p>Купив этот курс,</p>
+                        <p>Вы научитесь делать фотографии, которые будут продавать!</p>
+                        <p>Юлия Brovastaya</p>
+                    </div>
+                    <div class="offer__pricing">
+                        <p class="offer__text-upper">Стоимость полного курса</p>
+                        <p class="offer__old-cost">5000 руб</p>
+                        <p class="offer__actual-cost">3990 руб</p>
+                        <p class="offer__text-lower">Стоимость курса со скидкой</p>
+                        <a target="_blank" href="https://www.digiseller.market/asp2/pay_wm.asp?id_d=2653521&lang=ru-RU"><button class="offer__buy-btn" type="button" data-type="hover">Купить курс</button></a>
+                    </div>
+                </div>
+            </div>
+            <svg class="offer__wave" preserveAspectRatio="none" width="1920" height="465" viewBox="0 0 1920 465" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="offerWave" d="M1443.5 404.867C1613.5 291.299 1832 317.319 1920 344.525V0H960H0V456.14C161.2 464.232 281.87 412.95 326.5 389.869C651.3 221.889 950.833 327.085 1060 400.681C1124.5 444.165 1273.5 518.435 1443.5 404.867Z" fill="#282828"></path>
+                <path class="offerWave2" d="M0 0H960H1920H0Z" fill="#282828"></path>
+            </svg>
+        </section>
+        <footer class="page-footer">
+            <div class="page-footer__menu-social">
+                <ul class="page-footer__socials-list socials-list reset-list">
+                    <li class="socials-list__item page-footer__socials-item">
+                        <a class="socials-list__btn socials-list__btn--whatsapp page-footer__socials-btn page-footer__socials-btn--whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=79826515217&submit=Continue">
+                            <span class="visually-hidden">WhatsApp</span>
+                        </a>
+                    </li>
+                    <li class="socials-list__item page-footer__socials-item">
+                        <a class="socials-list__btn socials-list__btn--vk page-footer__socials-btn page-footer__socials-btn--vk" target="_blank" href="https://vk.com/brovastayaa">
+                            <span class="visually-hidden">VK</span>
+                        </a>
+                    </li>
+                    <li class="socials-list__item page-footer__socials-item">
+                        <a class="socials-list__btn socials-list__btn--insta page-footer__socials-btn page-footer__socials-btn--insta" target="_blank" href="https://www.instagram.com/brovastaya/">
+                            <span class="visually-hidden">Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="page-footer__contact-btn"><a href="tel:+79826515217">+7 982 651 52 17</a></button>
+                <div class="page-footer__copyright-wrap">
+                    <span class="copyrights page-footer__copyrights">© 2019 Brovastaya</span>
+                    <span class="page-footer__developer">Разработано <a href="#"><span>monka.Studio</span></a></span>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <div class="page-gallery">
+        <div class="page-gallery__wrap">
+            <input class="visually-hidden" type="radio" id="gallery-slide1" name="gallery">
+            <input class="visually-hidden" type="radio" id="gallery-slide2" name="gallery">
+            <input class="visually-hidden" type="radio" id="gallery-slide3" name="gallery" checked="true">
+            <button class="page-gallery__btn page-gallery__btn--prev">
+                <span class="visually-hidden">Предыдущее фото</span>
+            </button>
+            <ul class="page-gallery__list gallery reset-list">
+                <li class="gallery__item">
+                    <img class="gallery__photo" width="444" height="537" src="img/Kartochka_1.png" alt="Фото 1">
+                </li>
+                <li class="gallery__item">
+                    <img class="gallery__photo" width="444" height="537" src="img/Kartochka_2.png" alt="Фото 2">
+                </li>
+                <li class="gallery__item">
+                    <img class="gallery__photo" width="444" height="537" src="img/Kartochka_3.png" alt="Фото 3">
+                </li>
+            </ul>
+            <button class="page-gallery__btn page-gallery__btn--next">
+                <span class="visually-hidden">Следующее фото</span>
+            </button>
+            <div class="page-gallery__control">
+                <label class="page-gallery__control-item" for="gallery-slide1">
+                    <span class="visually-hidden">Первый слайд</span>
+                </label>
+                <label class="page-gallery__control-item" for="gallery-slide2">
+                    <span class="visually-hidden">Второй слайд</span>
+                </label>
+                <label class="page-gallery__control-item" for="gallery-slide3">
+                    <span class="visually-hidden">Третий слайд</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <script src="js/anime.min.js"></script>
+    <script src="js/waves.js"></script>
+    <script src="js/scroll.min.js"></script>
+    <script src="js/scale-block.js"></script>
+    <script src="js/spoiler.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/burger-btn.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
+</body>
+
+</html>
